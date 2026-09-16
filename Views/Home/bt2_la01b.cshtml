@@ -1,0 +1,85 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <table border="1" cellpadding="5" cellspacing="5" width="500" height="500">
+        @*--2.1 Gop cac o 2 3 4--*@
+        <tr bgcolor="#6699FF" align="left">
+            <th width="20%">1</th>
+            <th width="60%" colspan="3">2 3 4</th>
+            <th width="20%">5</th>
+        </tr>
+        @*--2.2 Gộp các ô  9-14-19--*@
+        <tr align="center" valign="middle">
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td rowspan="3">9<br />14<br />19<br /></td>
+            <td bgcolor="yellow">10</td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <table border="1" cellpadding="5" cellspacing="5" width="500" height="500">
+        @*--2.3 Gộp các ô 1 2--*@
+        <tr bgcolor="#6699FF" align="left">
+            <th width="40%" colspan="2" >1 2</th>
+            <th width="20%">3</th>
+            <th width="20%">4</th>
+            <th width="20%">5</th>
+        </tr>
+        @*--Gộp các ô 9 10 14 15--*@
+        <tr align="center" valign="middle">
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td bgcolor="yellow" colspan="2" rowspan="2">9 10 <br />14 15</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            @*--Gộp các ô 18 23--*@
+            <td>16</td>
+            <td>17</td>
+            <td rowspan="2">18<br />23</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+</body>
+</html>
